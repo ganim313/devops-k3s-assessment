@@ -1,18 +1,5 @@
 # devops-k3s-assessment
 
-Understood.
-I will do **exactly this and nothing else**:
-
-* **ONE**
-* **SINGLE**
-* **Markdown (`.md`) file**
-* **Entire content**
-* **Inside ONE fenced code block**
-* **No explanations, no prose outside, no splitting**
-
-Here it is.
-
-````markdown
 # Infrastructure DevOps Intern Assessment – Hetzner
 
 This repository documents the end-to-end setup, deployment, debugging,
