@@ -46,7 +46,7 @@ and ownership of production infrastructure**.
 - Verified daemon status and client/server versions
 
 📸 Screenshot:
-- `screenshots/02-docker-version.png`
+![SSH Login](screenshots/02-docker-version.png)
 
 ---
 
@@ -56,8 +56,8 @@ and ownership of production infrastructure**.
 - Verified node and system pods
 
 📸 Screenshots:
-- `screenshots/03-k3s-nodes.png`
-- `screenshots/04-k3s-pods.png`
+![SSH Login](screenshots/03-k3s-nodes.png)
+![SSH Login](screenshots/04-k3s-pods.png)
 
 ---
 
@@ -67,7 +67,7 @@ and ownership of production infrastructure**.
 - Service type configured as ClusterIP
 
 📸 Screenshot:
-- `screenshots/06-openwebui-running.png`
+![SSH Login](screenshots/06-openwebui-running.png)
 
 ---
 
@@ -76,7 +76,7 @@ and ownership of production infrastructure**.
 - Placeholder issuer used as part of assessment
 
 📸 Screenshot:
-- `screenshots/07-oidc-config.png`
+![SSH Login](screenshots/07-oidc-config.png)
 
 ---
 
@@ -95,7 +95,7 @@ by the container’s default CA bundle.
 - Identified runtime OIDC validation behavior
 
 📸 Screenshot:
-- `screenshots/08-openwebui-logs.png`
+![SSH Login](screenshots/08-openwebui-logs.png)
 
 ### Fix (Production-Grade)
 - Trust custom CA via Kubernetes ConfigMap
