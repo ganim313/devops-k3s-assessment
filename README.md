@@ -36,7 +36,7 @@ cost awareness, and ownership of production infrastructure.
 
 ---
 
-## 🚀 Implementation Walkthrough (with Evidence)
+## 🚀 Implementation 
 
 ### 1️⃣ Secure VM Access
 
