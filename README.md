@@ -98,6 +98,7 @@ operations, and low infrastructure costs.
 However, it is not highly available and represents a single point of
 failure. As reliability and traffic requirements grow, it should be
 upgraded to a multi-node or managed Kubernetes setup.
+
 ---
 
 ### 4️⃣ Helm & Application Deployment
@@ -136,6 +137,7 @@ kubectl get all -n openwebui
 
 All Open WebUI components (open-webui, redis, pipelines, ollama) were observed
 in a Running state after deployment.
+
 ---
 
 ### 5️⃣ OIDC Configuration (Intentional Failure)
