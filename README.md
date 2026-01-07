@@ -88,6 +88,16 @@ kubectl get pods -A
 ![k3s Nodes](screenshots/03-k3s-nodes.png)
 ![k3s Pods](screenshots/04-k3s-pods.png)
 
+#### Why this setup is suitable for an early-stage startup
+
+A single-node k3s cluster is suitable for an early-stage startup because it
+provides production-grade Kubernetes features with minimal operational
+overhead and low resource usage. It enables fast iteration, simplified
+operations, and low infrastructure costs.
+
+However, it is not highly available and represents a single point of
+failure. As reliability and traffic requirements grow, it should be
+upgraded to a multi-node or managed Kubernetes setup.
 ---
 
 ### 4️⃣ Helm & Application Deployment
@@ -124,6 +134,8 @@ kubectl get all -n openwebui
 
 ![OpenWebUI Running](screenshots/06-openwebui-running.png)
 
+All Open WebUI components (open-webui, redis, pipelines, ollama) were observed
+in a Running state after deployment.
 ---
 
 ### 5️⃣ OIDC Configuration (Intentional Failure)
@@ -140,7 +152,7 @@ oidc:
     - profile
     - email
 ```
-
+#### Applied using command
 ```bash
 helm upgrade webui open-webui/open-webui \
   --namespace openwebui \
@@ -172,6 +184,10 @@ kubectl logs open-webui-0 -n openwebui
 ```
 
 ![OpenWebUI Logs](screenshots/08-openwebui-logs.png)
+
+- Verified all pods were healthy with no crash loops
+- Inspected application logs and confirmed normal startup and migrations
+- Identified that OIDC discovery and validation are executed only during authentication, not at startup
 
 ---
 
@@ -253,4 +269,3 @@ kubectl get all -n openwebui
 - Many failures occur at runtime, not startup
 - Secure-by-default fixes matter more than quick hacks
 - Infrastructure ownership means planning for failure
-````
