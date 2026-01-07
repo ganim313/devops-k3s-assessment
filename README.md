@@ -37,7 +37,7 @@ and ownership of production infrastructure**.
 - Verified OS, disk, and memory availability
 
 📸 Screenshot:
-- screenshots/01-ssh-login.png
+![SSH Login](screenshots/01-ssh-login.png)
 
 ---
 
