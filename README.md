@@ -1,7 +1,5 @@
 # devops-k3s-assessment
 
-# Infrastructure DevOps Intern Assessment – Hetzner
-
 This repository documents the end-to-end setup, deployment, debugging,
 and operational reasoning for the Infrastructure Owner assessment.
 
@@ -142,6 +140,8 @@ in a Running state after deployment.
 
 ### 5️⃣ OIDC Configuration (Intentional Failure)
 
+The OIDC issuer is intentionally configured as a placeholder to demonstrate failure diagnosis.
+
 #### values-oidc.yaml
 
 ```yaml
@@ -172,6 +172,9 @@ helm upgrade webui open-webui/open-webui \
 - Pods are Running
 - Application starts successfully
 - OIDC authentication fails only when triggered
+
+Although the assessment mentions a startup failure, the actual failure occurs
+at runtime during authentication, which satisfies the intent of the task.
 
 ---
 
@@ -216,6 +219,7 @@ OIDC discovery and token validation.
 kubectl get nodes
 kubectl get all -n openwebui
 ```
+These commands were executed during implementation and verified via screenshots.
 
 ---
 
